@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity"
+      prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1"
+      fx:controller="simsizer.controllers.Help">
+    <Button fx:id="back" layoutX="24.0" layoutY="14.0" mnemonicParsing="false" text="Wróć" onAction="#back"/>
+    <Button fx:id="exit" layoutX="424.0" layoutY="14.0" mnemonicParsing="false" text="Wyjście" onAction="#exit"/>
+    <Label layoutX="204.0" layoutY="13.0" text="POMOC">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Label>
+    <Text disable="true" layoutX="22.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0"
+          text="❔ Jak program losuje cechy itd.?&#10;✅ W plikach programu zapisane są cechy - losowana jest jedna (lub więcej) z nich. Program ma zapisane wszystkie cechy, aspiracje i kariery pochodzące z gry pdostawowej oraz dodatków (do The Sims 4: Uniwersytet włącznie). W opcjach możesz wybrać, których dodatków nie posiadasz - aplikacja wówczas nie weźmie ich pod uwagę.&#10;❔ Wyszedł dodatek X, czemu go tu nie ma?&#10;✅ Bo aplikacja jeszcze go nie obsługuje. Kilka dni po premierze dodatku wejdź na mojego githuba i pobierz nową wersję. Nie należę do EA i nie jestem z tą firmą powiązana - ten program jest robiony hobbistycznie, po godzinach.&#10;❔ Czy mogę dodać własne cechy, aspiracje, orientacje etc.?&#10;✅ Tak! W folderze aplikacji znajdują się pliki, które można modyfikować. Aby dodać orientację seksualną, należy dopisać ją na końcu pliku orientation.txt (każdy wpis powinien znajdować się w oddzielnym wierszu), aspirację do pliku baseGame.txt w folderze aspirations, cechę do baseGame.txt w folderze traits...&#10;❔ Czy mogę coś usunąć?&#10;✅ Tak! Możesz edytować pliki txt, z których aplikacja losuje cechy. Pamiętaj tylko, by każdy wpis znajdował się w osobnym wierszu i by nie było między nimi pustych linijek. Każdy dodatek ma własną listę w odpowiednim folderze. Nie edytuj pliku my.properties - znajdują się tam informacje o dodatkach, które posiadasz. Po prostu zaznacz je w programie.  NIE zmieniaj nazw plików."
+          wrappingWidth="457.0">
+        <font>
+            <Font size="11.0"/>
+        </font>
+    </Text>
+</Pane>
